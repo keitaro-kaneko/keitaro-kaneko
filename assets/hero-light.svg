@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Keitaro Kaneko — Phixi, an AI-native company of 25 organisations">
+<style>
+@keyframes breathe{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.n{animation:breathe 4s ease-in-out infinite}
+.t{animation:rise .9s ease-out both}
+@media (prefers-reduced-motion:reduce){.n,.t{animation:none}}
+</style>
+<rect width="1200" height="420" rx="16" fill="#ffffff"/>
+<path id="e0" d="M880,210 L880.0,60.0" stroke="#d0d7de" stroke-width="1" stroke-dasharray="3 5"/>
+<path id="e1" d="M880,210 L918.8,65.1" stroke="#d0d7de" stroke-width="1" stroke-dasharray="3 5"/>
+<path id="e2" d="M880,210 L955.0,80.1" stroke="#d0d7de" stroke-width="1"/>
+<path id="e3" d="M880,210 L986.1,103.9" stroke="#d0d7de" stroke-width="1"/>
+<path id="e4" d="M880,210 L1009.9,135.0" stroke="#d0d7de" stroke-width="1"/>
+<path id="e5" d="M880,210 L1024.9,171.2" stroke="#d0d7de" stroke-width="1"/>
+<path id="e6" d="M880,210 L1030.0,210.0" stroke="#d0d7de" stroke-width="1"/>
+<path id="e7" d="M880,210 L1024.9,248.8" stroke="#d0d7de" stroke-width="1"/>
+<path id="e8" d="M880,210 L1009.9,285.0" stroke="#d0d7de" stroke-width="1"/>
+<path id="e9" d="M880,210 L986.1,316.1" stroke="#d0d7de" stroke-width="1"/>
+<path id="e10" d="M880,210 L955.0,339.9" stroke="#d0d7de" stroke-width="1"/>
+<path id="e11" d="M880,210 L918.8,354.9" stroke="#d0d7de" stroke-width="1"/>
+<path id="e12" d="M880,210 L880.0,360.0" stroke="#d0d7de" stroke-width="1"/>
+<path id="e13" d="M880,210 L841.2,354.9" stroke="#d0d7de" stroke-width="1"/>
+<path id="e14" d="M880,210 L805.0,339.9" stroke="#d0d7de" stroke-width="1"/>
+<path id="e15" d="M880,210 L773.9,316.1" stroke="#d0d7de" stroke-width="1"/>
+<path id="e16" d="M880,210 L750.1,285.0" stroke="#d0d7de" stroke-width="1"/>
+<path id="e17" d="M880,210 L735.1,248.8" stroke="#d0d7de" stroke-width="1"/>
+<path id="e18" d="M880,210 L730.0,210.0" stroke="#d0d7de" stroke-width="1"/>
+<path id="e19" d="M880,210 L735.1,171.2" stroke="#d0d7de" stroke-width="1"/>
+<path id="e20" d="M880,210 L750.1,135.0" stroke="#d0d7de" stroke-width="1"/>
+<path id="e21" d="M880,210 L773.9,103.9" stroke="#d0d7de" stroke-width="1"/>
+<path id="e22" d="M880,210 L805.0,80.1" stroke="#d0d7de" stroke-width="1"/>
+<path id="e23" d="M880,210 L841.2,65.1" stroke="#d0d7de" stroke-width="1"/>
+<path d="M880.0,60.0 Q880,210 986.1,103.9" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M918.8,65.1 Q880,210 1009.9,135.0" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M955.0,80.1 Q880,210 1024.9,171.2" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M986.1,103.9 Q880,210 1030.0,210.0" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M1009.9,135.0 Q880,210 1024.9,248.8" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M1024.9,171.2 Q880,210 1009.9,285.0" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M1030.0,210.0 Q880,210 986.1,316.1" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M1024.9,248.8 Q880,210 955.0,339.9" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M1009.9,285.0 Q880,210 918.8,354.9" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M986.1,316.1 Q880,210 880.0,360.0" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M955.0,339.9 Q880,210 841.2,354.9" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M918.8,354.9 Q880,210 805.0,339.9" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M880.0,360.0 Q880,210 773.9,316.1" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M841.2,354.9 Q880,210 750.1,285.0" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M805.0,339.9 Q880,210 735.1,248.8" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M773.9,316.1 Q880,210 730.0,210.0" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M750.1,285.0 Q880,210 735.1,171.2" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M735.1,248.8 Q880,210 750.1,135.0" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M730.0,210.0 Q880,210 773.9,103.9" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M735.1,171.2 Q880,210 805.0,80.1" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M750.1,135.0 Q880,210 841.2,65.1" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M773.9,103.9 Q880,210 880.0,60.0" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M805.0,80.1 Q880,210 918.8,65.1" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<path d="M841.2,65.1 Q880,210 955.0,80.1" fill="none" stroke="#d0d7de" stroke-width=".6" opacity=".5"/>
+<circle r="2.6" fill="#8250df"><animateMotion dur="2.60s" begin="0.00s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e0" xlink:href="#e0"/></animateMotion></circle>
+<circle r="2.6" fill="#8250df"><animateMotion dur="2.95s" begin="0.23s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e1" xlink:href="#e1"/></animateMotion></circle>
+<circle r="2.6" fill="#0969da"><animateMotion dur="3.30s" begin="0.46s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e2" xlink:href="#e2"/></animateMotion></circle>
+<circle r="2.6" fill="#0969da"><animateMotion dur="3.65s" begin="0.69s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e3" xlink:href="#e3"/></animateMotion></circle>
+<circle r="2.6" fill="#0969da"><animateMotion dur="4.00s" begin="0.92s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e4" xlink:href="#e4"/></animateMotion></circle>
+<circle r="2.6" fill="#0969da"><animateMotion dur="2.60s" begin="1.15s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e5" xlink:href="#e5"/></animateMotion></circle>
+<circle r="2.6" fill="#0969da"><animateMotion dur="2.95s" begin="1.38s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e6" xlink:href="#e6"/></animateMotion></circle>
+<circle r="2.6" fill="#1a7f37"><animateMotion dur="3.30s" begin="1.61s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e7" xlink:href="#e7"/></animateMotion></circle>
+<circle r="2.6" fill="#1a7f37"><animateMotion dur="3.65s" begin="1.84s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e8" xlink:href="#e8"/></animateMotion></circle>
+<circle r="2.6" fill="#1a7f37"><animateMotion dur="4.00s" begin="2.07s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e9" xlink:href="#e9"/></animateMotion></circle>
+<circle r="2.6" fill="#1a7f37"><animateMotion dur="2.60s" begin="2.30s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e10" xlink:href="#e10"/></animateMotion></circle>
+<circle r="2.6" fill="#1a7f37"><animateMotion dur="2.95s" begin="2.53s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e11" xlink:href="#e11"/></animateMotion></circle>
+<circle r="2.6" fill="#1a7f37"><animateMotion dur="3.30s" begin="2.76s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e12" xlink:href="#e12"/></animateMotion></circle>
+<circle r="2.6" fill="#1a7f37"><animateMotion dur="3.65s" begin="2.99s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e13" xlink:href="#e13"/></animateMotion></circle>
+<circle r="2.6" fill="#1a7f37"><animateMotion dur="4.00s" begin="0.22s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e14" xlink:href="#e14"/></animateMotion></circle>
+<circle r="2.6" fill="#1a7f37"><animateMotion dur="2.60s" begin="0.45s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e15" xlink:href="#e15"/></animateMotion></circle>
+<circle r="2.6" fill="#1a7f37"><animateMotion dur="2.95s" begin="0.68s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e16" xlink:href="#e16"/></animateMotion></circle>
+<circle r="2.6" fill="#9a6700"><animateMotion dur="3.30s" begin="0.91s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e17" xlink:href="#e17"/></animateMotion></circle>
+<circle r="2.6" fill="#9a6700"><animateMotion dur="3.65s" begin="1.14s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e18" xlink:href="#e18"/></animateMotion></circle>
+<circle r="2.6" fill="#9a6700"><animateMotion dur="4.00s" begin="1.37s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e19" xlink:href="#e19"/></animateMotion></circle>
+<circle r="2.6" fill="#9a6700"><animateMotion dur="2.60s" begin="1.60s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e20" xlink:href="#e20"/></animateMotion></circle>
+<circle r="2.6" fill="#656d76"><animateMotion dur="2.95s" begin="1.83s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e21" xlink:href="#e21"/></animateMotion></circle>
+<circle r="2.6" fill="#656d76"><animateMotion dur="3.30s" begin="2.06s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e22" xlink:href="#e22"/></animateMotion></circle>
+<circle r="2.6" fill="#656d76"><animateMotion dur="3.65s" begin="2.29s" repeatCount="indefinite" keyPoints="0;1;0" keyTimes="0;.5;1" calcMode="linear"><mpath href="#e23" xlink:href="#e23"/></animateMotion></circle>
+<g class="n" style="animation-delay:0.00s"><circle cx="880.0" cy="60.0" r="5.5" fill="#8250df"/></g>
+<text x="880.0" y="47.0" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">montesquieu</text>
+<g class="n" style="animation-delay:0.17s"><circle cx="918.8" cy="65.1" r="5.5" fill="#8250df"/></g>
+<text x="922.2" y="56.6" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">securities</text>
+<g class="n" style="animation-delay:0.34s"><circle cx="955.0" cy="80.1" r="5.5" fill="#0969da"/></g>
+<text x="961.5" y="72.8" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">researches</text>
+<g class="n" style="animation-delay:0.51s"><circle cx="986.1" cy="103.9" r="5.5" fill="#0969da"/></g>
+<text x="995.3" y="98.7" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">strategies</text>
+<g class="n" style="animation-delay:0.68s"><circle cx="1009.9" cy="135.0" r="5.5" fill="#0969da"/></g>
+<text x="1021.2" y="132.5" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">datas</text>
+<g class="n" style="animation-delay:0.85s"><circle cx="1024.9" cy="171.2" r="5.5" fill="#0969da"/></g>
+<text x="1037.4" y="171.8" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">patents</text>
+<g class="n" style="animation-delay:1.02s"><circle cx="1030.0" cy="210.0" r="5.5" fill="#0969da"/></g>
+<text x="1043.0" y="214.0" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">invests</text>
+<g class="n" style="animation-delay:1.19s"><circle cx="1024.9" cy="248.8" r="5.5" fill="#1a7f37"/></g>
+<text x="1037.4" y="256.2" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">seeds</text>
+<g class="n" style="animation-delay:1.36s"><circle cx="1009.9" cy="285.0" r="5.5" fill="#1a7f37"/></g>
+<text x="1021.2" y="295.5" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">b2b-apps</text>
+<g class="n" style="animation-delay:1.53s"><circle cx="986.1" cy="316.1" r="5.5" fill="#1a7f37"/></g>
+<text x="995.3" y="329.3" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">b2c-apps</text>
+<g class="n" style="animation-delay:1.70s"><circle cx="955.0" cy="339.9" r="5.5" fill="#1a7f37"/></g>
+<text x="961.5" y="355.2" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">b2a-apps</text>
+<g class="n" style="animation-delay:1.87s"><circle cx="918.8" cy="354.9" r="5.5" fill="#1a7f37"/></g>
+<text x="922.2" y="371.4" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">native-apps</text>
+<g class="n" style="animation-delay:2.04s"><circle cx="880.0" cy="360.0" r="5.5" fill="#1a7f37"/></g>
+<text x="880.0" y="383.0" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">inner-apps</text>
+<g class="n" style="animation-delay:2.21s"><circle cx="841.2" cy="354.9" r="5.5" fill="#1a7f37"/></g>
+<text x="837.8" y="371.4" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">games</text>
+<g class="n" style="animation-delay:2.38s"><circle cx="805.0" cy="339.9" r="5.5" fill="#1a7f37"/></g>
+<text x="798.5" y="355.2" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">oss</text>
+<g class="n" style="animation-delay:2.55s"><circle cx="773.9" cy="316.1" r="5.5" fill="#1a7f37"/></g>
+<text x="764.7" y="329.3" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">contract-devs</text>
+<g class="n" style="animation-delay:2.72s"><circle cx="750.1" cy="285.0" r="5.5" fill="#1a7f37"/></g>
+<text x="738.8" y="295.5" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">ec</text>
+<g class="n" style="animation-delay:2.89s"><circle cx="735.1" cy="248.8" r="5.5" fill="#9a6700"/></g>
+<text x="722.6" y="256.2" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">brandings</text>
+<g class="n" style="animation-delay:3.06s"><circle cx="730.0" cy="210.0" r="5.5" fill="#9a6700"/></g>
+<text x="717.0" y="214.0" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">tubes</text>
+<g class="n" style="animation-delay:3.23s"><circle cx="735.1" cy="171.2" r="5.5" fill="#9a6700"/></g>
+<text x="722.6" y="171.8" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">books</text>
+<g class="n" style="animation-delay:3.40s"><circle cx="750.1" cy="135.0" r="5.5" fill="#9a6700"/></g>
+<text x="738.8" y="132.5" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">musics</text>
+<g class="n" style="animation-delay:3.57s"><circle cx="773.9" cy="103.9" r="5.5" fill="#656d76"/></g>
+<text x="764.7" y="98.7" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">packages</text>
+<g class="n" style="animation-delay:3.74s"><circle cx="805.0" cy="80.1" r="5.5" fill="#656d76"/></g>
+<text x="798.5" y="72.8" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">artifacts</text>
+<g class="n" style="animation-delay:3.91s"><circle cx="841.2" cy="65.1" r="5.5" fill="#656d76"/></g>
+<text x="837.8" y="56.6" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">inc</text>
+<circle cx="880" cy="210" r="22" fill="#f6f8fa" stroke="#1a7f37" stroke-width="2"/>
+<text x="880" y="215" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1f2328">hub</text>
+<g class="t"><text x="64" y="150" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="44" font-weight="700" fill="#1f2328">Keitaro Kaneko</text></g>
+<g class="t" style="animation-delay:.15s"><text x="64" y="190" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="500" fill="#656d76">Founder &amp; CEO, Phixi Inc.</text></g>
+<g class="t" style="animation-delay:.3s"><text x="64" y="248" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="600" fill="#1f2328">Systems of AI, by AI, for people.</text></g>
+<g class="t" style="animation-delay:.45s"><text x="64" y="284" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="400" fill="#656d76">A company run as 25 organisations of agents —</text><text x="64" y="304" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="400" fill="#656d76">governed, audited and shipped as code.</text></g>
+<circle cx="64" cy="352" r="4" fill="#8250df"/><text x="73" y="356" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">governance</text>
+<circle cx="152.0" cy="352" r="4" fill="#0969da"/><text x="161.0" y="356" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">knowledge</text>
+<circle cx="233.4" cy="352" r="4" fill="#1a7f37"/><text x="242.4" y="356" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">factories</text>
+<circle cx="314.8" cy="352" r="4" fill="#9a6700"/><text x="323.8" y="356" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">media</text>
+<circle cx="369.8" cy="352" r="4" fill="#656d76"/><text x="378.8" y="356" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#656d76">platform</text>
+</svg>

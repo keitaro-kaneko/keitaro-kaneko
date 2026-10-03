@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-10-04",
+  "sources": {
+    "prs": "GitHub search, is:pr is:merged across the phixi organisations",
+    "agent_tasks": "claude-flow queue + archives",
+    "workflows": "phixi-hub/.github/workflows (343) + phixi-seeds/template/.github/workflows (109)",
+    "decisions": "phixi-hub/decisions",
+    "systems": "phixi-securities/.registry systems"
+  },
+  "tiles": [
+    {"value": "8,767", "label": "pull requests merged", "note": "505 in the last 30 days", "colour": "green"},
+    {"value": "1,795", "label": "agent tasks run", "note": "queued, isolated, verified", "colour": "blue"},
+    {"value": "452", "label": "CI workflows", "note": "audits, gates, fleet ops", "colour": "text"},
+    {"value": "524", "label": "decisions recorded", "note": "every rule has an ADR", "colour": "violet"},
+    {"value": "83", "label": "systems under security", "note": "64 controls · KEV watch", "colour": "red"},
+    {"value": "25", "label": "organisations", "note": "one per function", "colour": "amber"}
+  ]
+}

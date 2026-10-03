@@ -4,12 +4,10 @@
   Private work counts in the contribution graph ("Include private contributions" is on).
 -->
 
-<h1 align="center">Keitaro Kaneko <sub><sup>兼子 馨太郎</sup></sub></h1>
-
-<p align="center">
-  <b>Founder &amp; CEO, <a href="https://phixi.co.jp/en">Phixi Inc.</a></b><br>
-  Building <b>systems of AI, by AI, for people.</b>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img alt="Keitaro Kaneko — Founder & CEO, Phixi Inc. Systems of AI, by AI, for people. 25 organisations around a hub." src="assets/hero-light.svg" width="100%">
+</picture>
 
 <p align="center">
   <a href="https://phixi.co.jp/en"><img alt="Phixi" src="https://img.shields.io/badge/phixi.co.jp-0d1117?style=flat-square&logoColor=white"/></a>
@@ -28,16 +26,15 @@ I run **Phixi as an AI-native company**: the day-to-day work — research, build
 - **Separation of powers for the agents** — one org writes the rules, one audits every org against them, one judges. No agent can merge a change to the rules on its own, and every rule ends in a human approval.
 - **A factory, not a portfolio** — apps are scored, built, launched and retired by a pipeline; what fails is written back into the pipeline instead of into someone's memory.
 
-```mermaid
-flowchart LR
-  R["Research<br/>markets · platforms"] --> B["Brain<br/>evaluate · prioritise"]
-  B --> F["Factories<br/>apps · media · OSS"]
-  F --> G{"Gates<br/>security · rules · human"}
-  G --> P["Production"]
-  P -- "metrics · incidents" --> B
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/system-dark.svg">
+  <img alt="How Phixi runs: research, brain, factories, gates and production, under a separation of powers and a security loop" src="assets/system-light.svg" width="100%">
+</picture>
 
-<p align="center"><sub><b>15</b> apps in production · <b>113</b> tracked in the pipeline · <b>524</b> architecture decisions recorded · <b>25</b> organisations</sub></p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics-dark.svg">
+  <img alt="Operating metrics: 8,767 pull requests merged, 1,795 agent tasks, 452 CI workflows, 524 decisions, 83 systems under security, 25 organisations" src="assets/metrics-light.svg" width="100%">
+</picture>
 
 <p align="center">
   <a href="https://phixi.co.jp/en/ai">How it works &amp; the stack →</a> ·
@@ -67,7 +64,7 @@ Phixi は **AI ネイティブな会社**として運営しています。調査
 - **エージェントの三権分立** — ルールを作る org、全 org を監査する org、判定する org を分け、どのエージェントも単独ではルールを変えられません。ルールの最終承認は必ず人です
 - **ポートフォリオではなく工場** — アプリは採点・開発・公開・撤退までパイプラインで回し、失敗の教訓は人の記憶ではなくパイプラインに書き戻します
 
-**本番稼働 15 アプリ**・パイプラインで管理 113・意思決定記録 524 件・25 org
+マージした PR **8,767**（直近 30 日 505）・エージェントが実行したタスク **1,795**・CI ワークフロー **452**・意思決定記録 **524**・セキュリティ管理下のシステム **83**・**25** org（2026-10 時点）
 
 仕組みと技術スタックの詳細 → [phixi.co.jp/ai](https://phixi.co.jp/ai) ・ 稼働中のアプリ → [phixi.co.jp/apps](https://phixi.co.jp/apps) ・ デモ → [phixi.co.jp/demo](https://phixi.co.jp/demo)
 

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-label="How Phixi runs: research, brain, factories, gates, production, with oversight and a security loop">
+<style>@keyframes flow{to{stroke-dashoffset:-24}}.f{stroke-dasharray:6 6;animation:flow 1.2s linear infinite}@keyframes glow{0%,100%{opacity:.35}50%{opacity:.9}}.g{animation:glow 3s ease-in-out infinite}@media (prefers-reduced-motion:reduce){.f,.g{animation:none}}</style>
+<rect width="1200" height="470" rx="16" fill="#ffffff"/>
+<text x="48" y="52" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#656d76">HOW IT RUNS</text>
+<rect x="48" y="170" width="196" height="92" rx="12" fill="#f6f8fa" stroke="#0969da" stroke-width="1.5"/>
+<text x="66" y="210" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#1f2328">Research</text>
+<text x="66" y="236" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">markets · platforms</text>
+<path class="f" d="M248,216.0 H272" stroke="#1a7f37" stroke-width="2"/>
+<rect x="276" y="170" width="196" height="92" rx="12" fill="#f6f8fa" stroke="#1f2328" stroke-width="1.5"/>
+<text x="294" y="210" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#1f2328">Brain</text>
+<text x="294" y="236" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">evaluate · prioritise</text>
+<path class="f" d="M476,216.0 H500" stroke="#1a7f37" stroke-width="2"/>
+<rect x="504" y="170" width="196" height="92" rx="12" fill="#f6f8fa" stroke="#1a7f37" stroke-width="1.5"/>
+<text x="522" y="210" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#1f2328">Factories</text>
+<text x="522" y="236" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">apps · media · OSS</text>
+<path class="f" d="M704,216.0 H728" stroke="#1a7f37" stroke-width="2"/>
+<rect x="732" y="170" width="196" height="92" rx="12" fill="#f6f8fa" stroke="#8250df" stroke-width="1.5"/>
+<text x="750" y="210" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#1f2328">Gates</text>
+<text x="750" y="236" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">rules · security · human</text>
+<path class="f" d="M932,216.0 H956" stroke="#1a7f37" stroke-width="2"/>
+<rect x="960" y="170" width="196" height="92" rx="12" fill="#f6f8fa" stroke="#9a6700" stroke-width="1.5"/>
+<text x="978" y="210" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#1f2328">Production</text>
+<text x="978" y="236" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">SLOs · incidents</text>
+<path class="f" d="M1058.0,266 V322 H374.0 V266" fill="none" stroke="#9a6700" stroke-width="2"/>
+<text x="716.0" y="344" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">metrics · incidents · lessons written back into the pipeline</text>
+<rect class="g" x="48" y="82" width="1104" height="56" rx="12" fill="none" stroke="#8250df" stroke-width="1.5" stroke-dasharray="4 6"/>
+<text x="70" y="116" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#1f2328">Separation of powers</text>
+<text x="290" y="116" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">Legislature — writes the rules</text>
+<text x="505" y="116" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">Executive — audits every org</text>
+<text x="720" y="116" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">Judiciary — rules on changes</text>
+<text x="935" y="116" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">Final say — a human</text>
+<path d="M146.0,138 V170" stroke="#8250df" stroke-width="1" stroke-dasharray="2 5" opacity=".7"/>
+<path d="M374.0,138 V170" stroke="#8250df" stroke-width="1" stroke-dasharray="2 5" opacity=".7"/>
+<path d="M602.0,138 V170" stroke="#8250df" stroke-width="1" stroke-dasharray="2 5" opacity=".7"/>
+<path d="M830.0,138 V170" stroke="#8250df" stroke-width="1" stroke-dasharray="2 5" opacity=".7"/>
+<path d="M1058.0,138 V170" stroke="#8250df" stroke-width="1" stroke-dasharray="2 5" opacity=".7"/>
+<rect x="504" y="382" width="652" height="44" rx="10" fill="#f6f8fa" stroke="#cf222e" stroke-width="1.2"/>
+<text x="522" y="410" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#1f2328">Security loop</text>
+<text x="644" y="410" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">threat intel → attack → verify → one fix hardens every app</text>
+<text x="48" y="410" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">Every arrow is a workflow,</text>
+<text x="48" y="428" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#656d76">not a meeting.</text>
+</svg>
