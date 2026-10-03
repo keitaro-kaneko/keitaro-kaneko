@@ -1,0 +1,215 @@
+name: render
+
+# Fetches the current operating metrics from https://phixi.co.jp/metrics.json,
+# validates the data (staleness + no extreme drops), updates data/metrics.json,
+# runs scripts/render.py to regenerate the SVG assets, and commits the result.
+#
+# This WF goes red if:
+#   - metrics.json is unreachable
+#   - as_of is more than 14 days old (silence = failure)
+#   - any tile value dropped by more than 30% compared to the previous run
+#
+# No secrets required — all data comes from a public endpoint.
+
+on:
+  schedule:
+    - cron: '30 0 * * 0'   # Weekly Sunday 00:30 UTC (30 min after hub WF)
+  workflow_dispatch:
+
+concurrency:
+  group: render
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    name: Fetch metrics and render SVGs
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch metrics from phixi.co.jp
+        id: fetch
+        run: |
+          set -euo pipefail
+
+          METRICS_URL="https://phixi.co.jp/metrics.json"
+          FRESH_FILE="/tmp/fresh-metrics.json"
+
+          if ! curl -sSf --max-time 30 "$METRICS_URL" -o "$FRESH_FILE"; then
+            echo "::error::Failed to fetch $METRICS_URL"
+            exit 1
+          fi
+
+          # Validate JSON
+          if ! python3 -c "import json; json.load(open('$FRESH_FILE'))" 2>/dev/null; then
+            echo "::error::Response is not valid JSON"
+            exit 1
+          fi
+
+          echo "Fetched $(wc -c < "$FRESH_FILE") bytes from $METRICS_URL"
+          cat "$FRESH_FILE"
+
+      - name: Validate staleness and schema
+        run: |
+          python3 /dev/stdin <<'PYEOF'
+          import json, sys
+          from datetime import datetime, timedelta, timezone
+
+          fresh = json.load(open("/tmp/fresh-metrics.json"))
+          current_path = "data/metrics.json"
+          try:
+              current = json.load(open(current_path))
+          except FileNotFoundError:
+              current = {}
+
+          # --- Staleness check ---
+          as_of_str = fresh.get("as_of", "")
+          if not as_of_str:
+              print("::error::Missing 'as_of' field in metrics.json")
+              sys.exit(1)
+
+          try:
+              as_of = datetime.strptime(as_of_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+          except ValueError:
+              print(f"::error::Invalid as_of format: {as_of_str}")
+              sys.exit(1)
+
+          age_days = (datetime.now(timezone.utc) - as_of).days
+          print(f"as_of: {as_of_str} ({age_days} days ago)")
+
+          if age_days > 14:
+              print(f"::error::Metrics are {age_days} days old (limit: 14). "
+                    "The aggregation pipeline may have stopped.")
+              sys.exit(1)
+
+          # --- Schema check ---
+          tiles = fresh.get("tiles")
+          if not isinstance(tiles, list) or len(tiles) == 0:
+              print("::error::Missing or empty 'tiles' array")
+              sys.exit(1)
+
+          for tile in tiles:
+              for field in ("value", "label", "note", "colour"):
+                  if field not in tile:
+                      print(f"::error::Tile missing field '{field}': {tile}")
+                      sys.exit(1)
+
+          # --- Drop guard: no tile value should fall by more than 30% ---
+          def parse_int(s):
+              try:
+                  return int(str(s).replace(",", ""))
+              except (ValueError, TypeError):
+                  return None
+
+          old_tiles = {t["label"]: t for t in current.get("tiles", [])}
+          for tile in tiles:
+              label = tile["label"]
+              new_val = parse_int(tile["value"])
+              if label not in old_tiles or new_val is None:
+                  continue
+              old_val = parse_int(old_tiles[label]["value"])
+              if old_val is None or old_val == 0:
+                  continue
+              drop_pct = (old_val - new_val) / old_val
+              if drop_pct > 0.30:
+                  print(f"::error::{label} dropped by {drop_pct:.0%} "
+                        f"({old_val:,} → {new_val:,}). "
+                        "This looks like a data error — update aborted.")
+                  sys.exit(1)
+              if drop_pct > 0.10:
+                  print(f"::warning::{label} dropped by {drop_pct:.0%} "
+                        f"({old_val:,} → {new_val:,})")
+
+          print("Validation passed.")
+          PYEOF
+
+      - name: Update data/metrics.json and render SVGs
+        id: render
+        run: |
+          python3 /dev/stdin <<'PYEOF'
+          import json, os, subprocess, sys
+
+          fresh_path   = "/tmp/fresh-metrics.json"
+          current_path = "data/metrics.json"
+
+          fresh = json.load(open(fresh_path))
+
+          # Strip generated_at (internal field, not used by render.py)
+          for key in ("generated_at",):
+              fresh.pop(key, None)
+
+          # Check if data changed
+          try:
+              current = json.load(open(current_path))
+          except FileNotFoundError:
+              current = {}
+
+          if fresh == current:
+              print("data/metrics.json unchanged — skipping render")
+              with open(os.environ.get("GITHUB_OUTPUT", "/dev/null"), "a") as f:
+                  f.write("changed=false\n")
+              sys.exit(0)
+
+          # Write updated metrics
+          with open(current_path, "w") as f:
+              json.dump(fresh, f, indent=2, ensure_ascii=False)
+              f.write("\n")
+
+          print(f"Updated {current_path}")
+
+          # Render SVGs
+          result = subprocess.run(
+              ["python3", "scripts/render.py"],
+              capture_output=True, text=True
+          )
+          if result.returncode != 0:
+              print("::error::render.py failed")
+              print(result.stdout)
+              print(result.stderr)
+              sys.exit(1)
+
+          print(result.stdout.strip())
+
+          with open(os.environ.get("GITHUB_OUTPUT", "/dev/null"), "a") as f:
+              f.write("changed=true\n")
+          PYEOF
+
+      - name: Commit and push
+        if: steps.render.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/metrics.json assets/
+
+          AS_OF=$(python3 -c "import json; print(json.load(open('data/metrics.json'))['as_of'])")
+          git commit -m "chore(render): update metrics and SVGs as of ${AS_OF} [skip ci]"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Render summary" >> "$GITHUB_STEP_SUMMARY"
+          if [[ -f data/metrics.json ]]; then
+            python3 -c "
+          import json
+          d = json.load(open('data/metrics.json'))
+          print(f'**as_of**: {d[\"as_of\"]}')
+          print()
+          print('| Metric | Value |')
+          print('|--------|-------|')
+          for t in d['tiles']:
+              print(f'| {t[\"label\"]} | {t[\"value\"]} |')
+          " >> "$GITHUB_STEP_SUMMARY"
+          fi
